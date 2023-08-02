@@ -1,0 +1,27 @@
+.results-list {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1vh;
+  max-height: 35vh;
+  overflow-y: auto;
+  margin: 0.2vh;
+  margin-right: 10rem;
+}
+
+/*(Chrome, Safari, Opera... )*/
+
+.results-list::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.results-list::-webkit-scrollbar:vertical {
+  width:0.4vw;
+  background-color: #ebb8aa;
+}
+
+.results-list::-webkit-scrollbar-thumb {
+  background-color: #ba6d58;
+  border-radius: 1vh;
+  height: 10vh;
+}

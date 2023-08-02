@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+  
+html, 
+body {
+  font-family: system-ui, sans-serif;
+  background-color: #ddcec6;
+  color: rgb(61, 35, 22);
+}
+
+.App {
+  padding-top: 5rem;
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 1366px) {
+  .App {
+    padding-top: 3.9rem;
+  }
+}
