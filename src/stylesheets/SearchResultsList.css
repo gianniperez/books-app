@@ -7,6 +7,7 @@
   overflow-y: auto;
   margin: 0.2vh;
   margin-right: 10rem;
+  width: auto;
 }
 
 /*(Chrome, Safari, Opera... )*/
@@ -24,4 +25,10 @@
   background-color: #ba6d58;
   border-radius: 1vh;
   height: 10vh;
+}
+
+@media screen and (max-width: 1300px) {
+  .results-list {
+    width: 39vw;
+  }
 }

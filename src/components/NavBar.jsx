@@ -16,14 +16,14 @@ function NavBar() {
           <div>BookWorm</div>
           <ReactSVG src="icon2.svg" className="icon-bw"/>
         </NavLink>
-        <div>
+        <div className="search-bar-container">
           <SearchBar setResults={setResults}/>
           <SearchResultsList results={results} />
         </div>
-          <NavLink to="/Favorites" className="a-nav-bar">
-            <GoHeartFill />
-            <div>Favorites</div>
-          </NavLink>
+        <NavLink to="/Favorites" className="fav">
+          <GoHeartFill />
+          <div>Favorites</div>
+        </NavLink>
       </ul>
     </nav>
   );

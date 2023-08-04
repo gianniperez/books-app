@@ -6,6 +6,7 @@
     margin-top: 1.7vh;
     display: flex;
     margin-right: 10rem;
+    justify-content: space-between;
 }
 
 .text-container {
@@ -14,7 +15,6 @@
     width: 44rem;
     max-width: 78vh;
     font-size: 1rem;
-    background: none;
     border: none;
 }
 
@@ -40,11 +40,6 @@
     .search-container {
         height: 2.5rem;
     }
-    
-    .text-container {
-        font-size: .9rem;
-    }
-    
     .icon {
         width: 1.6rem;
     }
@@ -53,6 +48,10 @@
 @media screen and (max-width: 1300px) {
     .search-container {
         margin-right: 6rem;
+        width: 39vw;
+    }
+    .text-container {
+        width: 33vw;
     }
 }
 
@@ -60,16 +59,13 @@
     .search-container {
         margin-right: 0rem;
     }
+
 }
 
 @media screen and (max-width: 600px) {
     .search-container {
-        width: 90%;
+        width: 90vw;
+        justify-content: center;
     }
 
-    .icon {
-        margin-right: 0rem;
-        margin-left: 5rem;
-        color: white;
-    }
 }

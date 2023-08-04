@@ -1,30 +1,30 @@
 h1 {
   text-align: center;
-  font-size: 50px;
-  padding: 20px;
+  font-size: 4rem;
+  padding: 3vh;
 }
 
 .book-container {
   width: auto;
   height: auto;
-  margin: 10px 60px 50px;
+  margin: 2vh 4vw 8vh;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
   background-color: #f3ebe7;
   text-align: center;
-  box-shadow: 0 10px 13px 1px rgb(0 0 0 / 20%);
+  box-shadow: 0 0.5vw 2vh 0 rgb(0 0 0 / 20%);
 }
 
 .book-image {
-  height: 600px;
+  height: 700px;
   width: auto;
+  float: left;
 }
 
 .book-container-text {
-  align-items: center;
   padding: 60px;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .book-title {
@@ -34,7 +34,7 @@ h1 {
 .book-authors {
   font-size: 1.1rem;
   margin-top: 15px;
-  padding-bottom: 30px;
+  padding-bottom: 2vh;
 }
 
 .book-descr {
@@ -48,11 +48,11 @@ h1 {
 }
 
 .add {
-  padding: 15px;
+  padding: 1rem;
   width: 100%;
   background: #ba6d58;
   color: white;
-  border-radius: 40px;
+  border-radius: 2rem;
   border: none;
   transition: 0.3s ease-in-out;
 }
@@ -60,4 +60,41 @@ h1 {
 .add:hover {
   cursor: pointer;
   background-color: #8d4d3f;
+}
+
+@media screen and (max-width: 1600px) {
+  .book-container {
+    height: 80vh;
+  }
+
+  .book-image {
+    block-size: 80vh;
+  }
+
+  .book-container-text {
+    overflow-y: scroll;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .book-image {
+    display: none;
+  }
+}
+
+/*(Chrome, Safari, Opera... )*/
+
+.book-container-text::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.book-container-text::-webkit-scrollbar:vertical {
+  width:0.4vw;
+  background-color: #ebb8aa;
+}
+
+.book-container-text::-webkit-scrollbar-thumb {
+  background-color: #ba6d58;
+  border-radius: 1vh;
+  height: 10vh;
 }

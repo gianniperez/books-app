@@ -6,6 +6,7 @@ export const Library = () => {
 
   const [books, setBooks] = useState([]);
   const Api = 'https://example-data.draftbit.com/books?_limit=50';
+  const msg = "Welcome to BookWorm's Library";
 
   useEffect(() => {
     axios.get(Api).then((res) => {
@@ -17,7 +18,7 @@ export const Library = () => {
 
   return (
     <div>
-      <h1>BookWorms Library</h1>
+      <h1>{msg}</h1>
       <BookList reference={books}/>
     </div>
   )

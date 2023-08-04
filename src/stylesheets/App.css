@@ -20,3 +20,9 @@ body {
     padding-top: 3.9rem;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .App {
+    padding-top: 0;
+  }
+}
