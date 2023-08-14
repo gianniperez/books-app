@@ -1,0 +1,35 @@
+= Books App − 2023
+
+== Introducción
+
+Este proyecto consiste en crear una simulación de una librería virtual. Posee una barra de búsqueda para encontrar un libro en específico. Por lo contrario, si se desea ver el catálogo disponible en la plataforma, esto se puede realizar yendo a la sección principal de libros desde el inicio.
+
+Cada uno de los libros se puede clasificar del 1 al 5 según el gusto del visitante. Por otro lado, también se puede agregar a favoritos y leer los detalles desde su sección correspondiente.
+
+== Componentes
+
+`Book.jsx:` Contiene la siguiente información de un libro: Portada, título, autor/es descripción. Además, cuenta con su respectiva clasificación y botón para agregar a favoritos.
+
+`BookList.jsx:` Crea una lista de libros utilizando `Book.jsx`.
+
+`Favorites.jsx:` Sección de favoritos utilizando `BookList.jsx`.
+
+`Home.jsx:` Contiene la información de la sección principal.
+
+`ImageSlider.jsx:` Contiene el slider de imágenes que se muestra en el inicio de la app junto a frases. Sumado a esto, está el botón que te dirige hacia la librería.
+
+`Library.jsx:` Contiene todos los libros de la plataforma.
+
+`NavBar.jsx:` La barra de navegación que contiene el logo, la barra de búsqueda y la sección de favoritos.
+
+`Rating.jsx:` Contiene la clasificación de los libros.
+
+`Result.jsx:` El libro que corresponde al resultado que se selecciona en la barra de búsqueda
+
+`Results.jsx:` Todos los libros que corresponden a todos los resultados de la barra de búsqueda.
+
+`SearchBar.jsx:` La barra de búsqueda, contiene un input y una lupa para buscar y cerrar los resultados.
+
+`SearchResult.jsx:` El resultado que se selecciona en la barra de búsqueda.
+
+`SearchResultsList.jsx:` Todos los resultados de la barra de búsqueda.
